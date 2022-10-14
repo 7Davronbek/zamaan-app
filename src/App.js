@@ -10,13 +10,13 @@ import Services from './components/Services'
 const App = () => {
   return (
     <>
-      <Navbar/>
-      <Header/>
-      <Services/>
-      <Projects/>
-      <Partners/>
-      <LetsTalk/>
-      <Footer/>
+      <Navbar />
+      <Header />
+      <Services />
+      <Projects />
+      <Partners />
+      <LetsTalk />
+      <Footer />
     </>
   )
 }

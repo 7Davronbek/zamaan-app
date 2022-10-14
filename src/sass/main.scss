@@ -76,11 +76,6 @@ body {
         }
     }
 
-    .row {
-        margin: 0 !important;
-    }
-
-
     .navBar {
         z-index: 999;
         padding: 20px 0;
@@ -362,6 +357,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
             h2 {
                 font-weight: 500;
                 font-size: 32px;
@@ -378,18 +374,19 @@ body {
                 transition: all .5s ease-in-out;
                 background: none !important;
                 border: none;
+
                 .accordion-header {
                     border-bottom: 1px solid #F5F5F566;
                     background: transparent !important;
                     cursor: pointer;
                     transition: all .5s ease-in-out;
 
-                    
-                    
+
+
                     &:hover {
                         background: $gradient !important;
                     }
-                    
+
                     .accordion-button {
                         padding: 45px 32px;
                         background: none;
@@ -434,7 +431,7 @@ body {
 
                 .accordion-body {
                     padding: 28px 0 60px 24px;
-                    
+
                     h6 {
                         font-weight: 500;
                         color: #fff;
