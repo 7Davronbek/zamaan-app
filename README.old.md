@@ -1,1 +1,0 @@
-# zamaan-app
