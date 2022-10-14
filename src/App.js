@@ -1,24 +1,21 @@
 import React from 'react'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
-import Header from './components/Header'
-import LetsTalk from './components/LetsTalk'
 import Navbar from './components/Navbar'
-import Partners from './components/Partners'
-import Projects from './components/Projects'
-import Services from './components/Services'
+import Main from './pages/Main'
 
 const App = () => {
-  return (
-    <>
-      <Navbar />
-      <Header />
-      <Services />
-      <Projects />
-      <Partners />
-      <LetsTalk />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <HashRouter>
+                <Navbar />
+                <Routes>
+                    <Route path='/' element={<Main />} />
+                </Routes>
+                <Footer />
+            </HashRouter>
+        </>
+    )
 }
 
 export default App

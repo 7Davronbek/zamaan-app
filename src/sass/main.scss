@@ -386,8 +386,6 @@ body {
                     cursor: pointer;
                     transition: all .5s ease-in-out;
 
-
-
                     &:hover {
                         background: $gradient !important;
                     }
@@ -405,6 +403,11 @@ body {
                         align-items: center;
                         outline: none;
                         box-shadow: none;
+                        background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
+                        box-shadow: inset 4px 4px 27px rgba(255, 255, 255, 0.7);
+                        transition: all .3s ease-in-out;
+                        justify-content: center;
+                        transition: all .5s ease-in-out;
 
                         &::after {
                             display: none;
@@ -415,6 +418,7 @@ body {
                             width: 54px;
                             height: 54px;
                             transition: all .5s ease-in-out;
+                            display: none;
 
                             // margin-left: auto
                             .burger1,
@@ -429,6 +433,16 @@ body {
 
                             .burger2 {
                                 transform: rotate(90deg);
+                            }
+                        }
+
+                        &.collapsed {
+                            background: none;
+                            box-shadow: none;
+                            justify-content: space-between;
+
+                            .burger {
+                                display: block;
                             }
                         }
                     }
