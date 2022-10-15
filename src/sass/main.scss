@@ -139,7 +139,7 @@ body {
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 0;
             margin: 0;
-
+            backdrop-filter: blur(30px);
         }
 
         select {
@@ -315,6 +315,7 @@ body {
             color: #ffff;
             margin-bottom: 100px;
             text-align: end;
+            margin-top: 80px;
         }
 
         .myBtn {
@@ -484,19 +485,22 @@ body {
         }
     }
 
-    .Partners{
+    .Partners {
         // background: url(../img/partners.png) no-repeat;
         // background-size: cover;
         // background-position: 0;
         padding: 100px 0 350px;
         position: relative;
-        .img{
+
+        .img {
             position: absolute;
             left: 0;
             right: 0;
             top: -50%;
+            z-index: -1;
         }
-        h2{
+
+        h2 {
             font-weight: 500;
             font-size: 64px;
             color: #fff;
