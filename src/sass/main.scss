@@ -78,7 +78,7 @@ body {
 
     .navBar {
         z-index: 999;
-        padding: 20px 0;
+        padding: 30px 0;
         // box-shadow: 0 0 10px silver;
         position: fixed;
         left: 0;
@@ -88,6 +88,7 @@ body {
         transition: all ease 0.8s;
         // background: red;
         border-bottom: 1px solid #FFFFFF5C;
+        backdrop-filter: blur(30px);
 
         ul.nav-menu {
             display: flex;
@@ -133,13 +134,10 @@ body {
 
         }
 
-        &.active {
-            border-radius: 0 0 20px 20px;
-            backdrop-filter: blur(15px);
+        &.navbarActive {
             background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 0;
-            margin: 0;
-            backdrop-filter: blur(30px);
+            padding: 20px 0;
+            box-shadow: 0 0 10px silver;
         }
 
         select {
