@@ -484,5 +484,24 @@ body {
         }
     }
 
-
+    .Partners{
+        // background: url(../img/partners.png) no-repeat;
+        // background-size: cover;
+        // background-position: 0;
+        padding: 100px 0 350px;
+        position: relative;
+        .img{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -50%;
+        }
+        h2{
+            font-weight: 500;
+            font-size: 64px;
+            color: #fff;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
 }
