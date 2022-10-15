@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
@@ -34,9 +35,9 @@ const Navbar = () => {
 
                         <div className={`col-3 mobileWrap ${burger ? '' : 'burgered'}`}>
                             <ul className="nav-menu">
-                                <li><a onClick={() => setBurger(!burger)} href="#questions">Главная</a></li>
-                                <li><a onClick={() => setBurger(!burger)} href="#about">Услуги</a></li>
-                                <li><a onClick={() => setBurger(!burger)} href="#contacts">Контакты</a></li>
+                                <li><Link onClick={() => setBurger(!burger)} to="/questions">Главная</Link></li>
+                                <li><Link onClick={() => setBurger(!burger)} to="/about">Услуги</Link></li>
+                                <li><Link onClick={() => setBurger(!burger)} to="/contacts">Контакты</Link></li>
 
                             </ul>
 
