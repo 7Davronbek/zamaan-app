@@ -705,4 +705,21 @@ body {
             }
         }
     }
+
+    .LetsTalk {
+        background: #2B2B2B;
+        padding: 55px 0;
+        display: block;
+
+        h1 {
+            font-weight: 500;
+            font-size: 80px;
+            line-height: 106px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 }
