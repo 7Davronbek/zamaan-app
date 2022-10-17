@@ -118,7 +118,8 @@ body {
                         background: linear-gradient(90deg, #4A3AFF 0%, #A500DF 100%);
                     }
 
-                    &:hover, &.active {
+                    &:hover,
+                    &.active {
                         color: #fff;
 
                         &::after {
@@ -290,7 +291,7 @@ body {
     .Header {
         padding: 100px 0;
         // position: relative;
-        background: url(../img/header.png) no-repeat;
+        background: url(../img/header.svg) no-repeat;
         height: 1210px;
         background-size: cover;
 
@@ -325,7 +326,7 @@ body {
                 color: #0F0F0F;
                 padding: 24px 40px;
                 background: #F5F5F5;
-                box-shadow: 0px 1px 10px 3px rgba(255, 255, 255, 0.55);
+                box-shadow: 0px 1px 10px 3px #ffffff33;
                 border-radius: 0px 40px;
                 display: inline-block;
                 text-transform: uppercase;
