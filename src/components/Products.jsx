@@ -31,6 +31,27 @@ const Products = () => {
                             <h4>Mobile app</h4>
                         </a>
                     </div>
+                    <div className="col-lg-6">
+                        <a href='/' className="cards">
+                            <img className='w-100' src="/img/portfolio/1.png" alt="" />
+                            <h5>byte</h5>
+                            <h4>Mobile app</h4>
+                        </a>
+                    </div>
+                    <div className="col-lg-6">
+                        <a href='/' className="cards">
+                            <img className='w-100' src="/img/portfolio/1.png" alt="" />
+                            <h5>byte</h5>
+                            <h4>Mobile app</h4>
+                        </a>
+                    </div>
+                    <div className="col-lg-6">
+                        <a href='/' className="cards">
+                            <img className='w-100' src="/img/portfolio/1.png" alt="" />
+                            <h5>byte</h5>
+                            <h4>Mobile app</h4>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
