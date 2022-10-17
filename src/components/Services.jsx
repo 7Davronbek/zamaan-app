@@ -33,92 +33,111 @@ const Services = () => {
                     <Accordion className='service__list border2' open={open} toggle={toggle}>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="1">
-                                Mobile Services  <div className='burger'>
+                                Разработка приложения  <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
                             </AccordionHeader>
                             <AccordionBody accordionId="1">
-                           
-                                    <h6>Создадим для вас:</h6>
-                                    <ul>
-                                        <li>Интернет магазин</li>
-                                        <li> Сайт визитка</li>
-                                        <li>Корпоративные сайты</li>
-                                        <li>Сложные системы</li>
-                                    </ul>
+
+                                <h6>Создадим для вас:</h6>
+                                <ul>
+                                    <li>Интернет магазин</li>
+                                    <li> Сайт визитка</li>
+                                    <li>Корпоративные сайты</li>
+                                    <li>Сложные системы</li>
+                                </ul>
                             </AccordionBody>
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="2">
-                            Internet Marketing  <div className='burger'>
+                                Разработка сайтов   <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
                             </AccordionHeader>
                             <AccordionBody accordionId="2">
-                           
-                                    <h6>Создадим для вас:</h6>
-                                    <ul>
-                                        <li>Интернет магазин</li>
-                                        <li> Сайт визитка</li>
-                                        <li>Корпоративные сайты</li>
-                                        <li>Сложные системы</li>
-                                    </ul>
+
+                                <h6>Создадим для вас:</h6>
+                                <ul>
+                                    <li>Интернет магазин</li>
+                                    <li> Сайт визитка</li>
+                                    <li>Корпоративные сайты</li>
+                                    <li>Сложные системы</li>
+                                </ul>
                             </AccordionBody>
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="3">
-                            Web Services  <div className='burger'>
+                                Комплексный маркетинг  <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
                             </AccordionHeader>
                             <AccordionBody accordionId="3">
-                           
-                                    <h6>Создадим для вас:</h6>
-                                    <ul>
-                                        <li>Интернет магазин</li>
-                                        <li> Сайт визитка</li>
-                                        <li>Корпоративные сайты</li>
-                                        <li>Сложные системы</li>
-                                    </ul>
+
+                                <h6>Создадим для вас:</h6>
+                                <ul>
+                                    <li>Интернет магазин</li>
+                                    <li> Сайт визитка</li>
+                                    <li>Корпоративные сайты</li>
+                                    <li>Сложные системы</li>
+                                </ul>
                             </AccordionBody>
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="4">
-                            Design  <div className='burger'>
+                                Разработка СRM систем
+                                и телеграм ботов  <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
                             </AccordionHeader>
                             <AccordionBody accordionId="4">
-                           
-                                    <h6>Создадим для вас:</h6>
-                                    <ul>
-                                        <li>Интернет магазин</li>
-                                        <li> Сайт визитка</li>
-                                        <li>Корпоративные сайты</li>
-                                        <li>Сложные системы</li>
-                                    </ul>
+
+                                <h6>Создадим для вас:</h6>
+                                <ul>
+                                    <li>Интернет магазин</li>
+                                    <li> Сайт визитка</li>
+                                    <li>Корпоративные сайты</li>
+                                    <li>Сложные системы</li>
+                                </ul>
                             </AccordionBody>
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="5">
-                            Motion  <div className='burger'>
+                                3D Анимация и моушен  <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
                             </AccordionHeader>
                             <AccordionBody accordionId="5">
-                           
-                                    <h6>Создадим для вас:</h6>
-                                    <ul>
-                                        <li>Интернет магазин</li>
-                                        <li> Сайт визитка</li>
-                                        <li>Корпоративные сайты</li>
-                                        <li>Сложные системы</li>
-                                    </ul>
+
+                                <h6>Создадим для вас:</h6>
+                                <ul>
+                                    <li>Интернет магазин</li>
+                                    <li> Сайт визитка</li>
+                                    <li>Корпоративные сайты</li>
+                                    <li>Сложные системы</li>
+                                </ul>
+                            </AccordionBody>
+                        </AccordionItem>
+                        <AccordionItem className='wrap'>
+                            <AccordionHeader targetId="6">
+                                Дизайн  <div className='burger'>
+                                    <div className="burger1"></div>
+                                    <div className="burger2"></div>
+                                </div>
+                            </AccordionHeader>
+                            <AccordionBody accordionId="6">
+
+                                <h6>Создадим для вас:</h6>
+                                <ul>
+                                    <li>Интернет магазин</li>
+                                    <li> Сайт визитка</li>
+                                    <li>Корпоративные сайты</li>
+                                    <li>Сложные системы</li>
+                                </ul>
                             </AccordionBody>
                         </AccordionItem>
                     </Accordion>

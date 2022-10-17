@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const LetsTalk = () => {
   return (
-    <Link to='/' className='LetsTalk'>
+    <Link to='/contacts' className='LetsTalk'>
       <div className="container">
         <div className="row">
           <div className="col-12">

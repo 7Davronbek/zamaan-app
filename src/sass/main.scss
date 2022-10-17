@@ -550,6 +550,7 @@ body {
     }
 
     .ContactSend {
+
         .contact_send_box {
             padding: 70px 0 30px;
             border-top: 1px solid #F5F5F5;
@@ -622,6 +623,12 @@ body {
             }
         }
 
+        &.second {
+           .contact_send_box {
+            border-bottom: 0;
+            padding-bottom: 70px;
+           } 
+        }
     }
 
     .ContactService {

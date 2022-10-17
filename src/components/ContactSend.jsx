@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const ContactSend = () => {
-    const [con, setCon] = useState(false);
+    // const [con, setCon] = useState(false);
     return (
         <>
             <div className="ContactSend">
@@ -22,7 +22,6 @@ const ContactSend = () => {
             </div>
 
 
-
             <div className="ContactService">
                 <div className="container">
                     <div className="row">
@@ -31,13 +30,13 @@ const ContactSend = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="contact_service_box_1">
-                                <div onClick={() => setCon(!con)} className={`contact_service_h ${con ? 'active' : ''}`}> Mobile Services </div>
-                                <div onClick={() => setCon(!con)} className={`contact_service_h ${con ? 'active' : ''}`}> Internet Marketing </div>
+                                <div className={`contact_service_h `}> Mobile Services </div>
+                                <div className={`contact_service_h `}> Internet Marketing </div>
                             </div>
                             <div className="contact_service_box_2">
-                                <div onClick={() => setCon(!con)} className={`contact_service_h_2 ${con ? 'active' : ''}`}>Web Services </div>
-                                <div onClick={() => setCon(!con)} className={`contact_service_h_2 ${con ? 'active' : ''}`}>Design </div>
-                                <div onClick={() => setCon(!con)} className={`contact_service_h_2 ${con ? 'active' : ''}`}>Motion </div>
+                                <div className={`contact_service_h_2 `}>Web Services </div>
+                                <div className={`contact_service_h_2 `}>Design </div>
+                                <div className={`contact_service_h_2 `}>Motion </div>
                             </div>
                         </div>
                     </div>
@@ -45,8 +44,7 @@ const ContactSend = () => {
             </div>
 
 
-
-            <div className="ContactSend">
+            <div className="ContactSend second">
                 <div className="container">
                     <div className="row contact_send_box">
                         <div className="col-5">
@@ -58,7 +56,7 @@ const ContactSend = () => {
                             <input placeholder='Напишите' type="text" className="contact_send_inp" />
                             <a href='' className="contact_send_add">
                                 <img src="/img/plus.png" alt="" className="contact_send_img" />
-                                <div className="contact_send_p"> Добавить файл</div>
+                                <div className="contact_send_p"> <span className='me-3'><img src="/img/plus.svg" alt="" /></span> Добавить файл</div>
                             </a>
                             <button className="contact_send_btn">Отправить</button>
                         </div>
