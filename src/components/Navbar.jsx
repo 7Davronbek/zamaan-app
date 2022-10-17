@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     const [burger, setBurger] = useState(false)
+
+    const location = useLocation()
 
     const changeNavbar = () => {
         if (window.scrollY >= 30) {
@@ -35,9 +37,9 @@ const Navbar = () => {
 
                         <div className={`col-3 mobileWrap ${burger ? '' : 'burgered'}`}>
                             <ul className="nav-menu">
-                                <li><Link onClick={() => setBurger(!burger)} to="/questions">Главная</Link></li>
-                                <li><Link onClick={() => setBurger(!burger)} to="/about">Услуги</Link></li>
-                                <li><Link onClick={() => setBurger(!burger)} to="/contacts">Контакты</Link></li>
+                                <li><Link className={` ${location.pathname === '/' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/">Главная</Link></li>
+                                <li><Link className={` ${location.pathname === '/about' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/about">Услуги</Link></li>
+                                <li><Link className={` ${location.pathname === '/contacts' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/contacts">Контакты</Link></li>
 
                             </ul>
 
