@@ -6,6 +6,20 @@ const Products = () => {
     const [productTitle, setProductTitle] = useState([])
     const [products, setProducts] = useState([])
 
+    const [datas, setDatas] = useState(products)
+    const allCategories = ['All', ...new Set(datas.map((item) => item.service))]
+    const [category2, setCategory2] = useState(allCategories)
+
+    const filterCategory = category => {
+        const newItem = products.filter((item) => item.service === category2)
+        setDatas(newItem)
+
+        if (category2 === 'All') {
+            setDatas(products)
+            return
+        }
+    }
+
     const getTitle = async () => {
         await axios.get(API_PATH + '/services')
             .then(res => {
@@ -38,7 +52,9 @@ const Products = () => {
                     <div className="col-12">
                         <div className="wrap">
                             {productTitle && productTitle.map((item, index) => (
-                                <h6 key={index}>Разработка приложения</h6>
+                                <h6
+                                    onClick={() => filterCategory(item)}
+                                    key={index}>{item.name}</h6>
                             ))}
                         </div>
                     </div>

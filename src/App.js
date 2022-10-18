@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import Contacts from './pages/Contacts'
 import Main from './pages/Main'
+import ServicesPage from './pages/ServicesPage'
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
                 <Routes>
                     <Route path='/' element={<Main />} />
                     <Route path='/contacts' element={<Contacts />} />
+                    <Route path='/services' element={<ServicesPage />} />
                 </Routes>
                 <Footer />
                 <ScrollToTop />

@@ -38,7 +38,7 @@ const Navbar = () => {
                         <div className={`col-3 mobileWrap ${burger ? '' : 'burgered'}`}>
                             <ul className="nav-menu">
                                 <li><Link className={` ${location.pathname === '/' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/">Главная</Link></li>
-                                <li><Link className={` ${location.pathname === '/about' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/about">Услуги</Link></li>
+                                <li><Link className={` ${location.pathname === '/services' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/services">Услуги</Link></li>
                                 <li><Link className={` ${location.pathname === '/contacts' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/contacts">Контакты</Link></li>
 
                             </ul>

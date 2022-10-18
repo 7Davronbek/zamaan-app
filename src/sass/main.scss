@@ -504,7 +504,7 @@ body {
         // background: url(../img/partners.png) no-repeat;
         // background-size: cover;
         // background-position: 0;
-        padding: 100px 0 350px;
+        padding: 100px 0 300px;
         position: relative;
 
         .img {
@@ -513,6 +513,13 @@ body {
             right: 0;
             top: -50%;
             z-index: -1;
+        }
+
+        .swiper {
+            background: rgba(255, 255, 255, 0.01);
+            box-shadow: 0px 4px 4px #00000040;
+            backdrop-filter: blur(25px);
+            padding: 40px 0;
         }
 
         .swiper-slide {
