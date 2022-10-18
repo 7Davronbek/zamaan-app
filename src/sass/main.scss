@@ -295,6 +295,22 @@ body {
         height: 1210px;
         background-size: cover;
 
+        .container {
+            position: relative;
+        }
+
+        .blur {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            right: 200px;
+            z-index: -1;
+            // background: rgb(7 177 141 / 95%);
+            filter: blur(30px);
+            background: linear-gradient(249deg, #c50024 0%, #150185 100%);
+        }
+
         .back {
             position: absolute;
             left: 0;
