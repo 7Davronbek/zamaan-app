@@ -1,6 +1,35 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import { API_PATH } from '../tools/constants'
 
 const Products = () => {
+    const [productTitle, setProductTitle] = useState([])
+    const [products, setProducts] = useState([])
+
+    const getTitle = async () => {
+        await axios.get(API_PATH + '/services')
+            .then(res => {
+                setProductTitle(res.data)
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }
+    
+    const getProducts = async () => {
+        await axios.get(API_PATH + '/projects')
+            .then(res => {
+                setProducts(res.data)
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }
+
+    useEffect(() => {
+        getTitle()
+    }, [])
+    
     return (
         <div className='Products'>
             <div className="container">

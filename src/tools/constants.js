@@ -1,0 +1,1 @@
+export const API_PATH = 'http://backend.zamaan.uz'
