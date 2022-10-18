@@ -12,7 +12,7 @@ const Contacts = () => {
                         </div>
                         <div className="col-6">
                             <div className="contact_soc">
-                                <a href="" className="contact_mail">zamaangroupuz@gmail.com</a>
+                            <a target={'_blank'} className='contact_mail' href="https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=zamaangroupuz@gmail.com">zamaangroupuz@gmail.com</a>
                                 <div className="contact_icon">
                                     <a href=""><img src="/img/instagram.png" alt="" className="contact_icon" /></a>
                                     <a href=""><img src="/img/instagram.png" alt="" className="contact_icon ms-4" /></a>
