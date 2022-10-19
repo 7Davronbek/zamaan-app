@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { API_PATH } from '../tools/constants'
+import { API_PATH, config } from '../tools/constants'
 
 const ContactSend = () => {
     const [name, setName] = useState('')
@@ -10,9 +10,23 @@ const ContactSend = () => {
     const [service, setService] = useState('')
     const [message, setMessage] = useState('')
     const [files, setFiles] = useState('')
+
+    const pushService = e => {
+        setService(old => [...old, e])
+        console.log(service);
+    }
+
     const handleClick = async e => {
         e.preventDefault()
-        await axios.post(API_PATH + '/contact/', { name, company, phone, email, service, message })
+        const formData = new FormData()
+        formData.append('name', name)
+        formData.append('company', company)
+        formData.append('phone', phone)
+        formData.append('email', email)
+        formData.append('service', service)
+        formData.append('message', message)
+        formData.append('file', files)
+        await axios.post(API_PATH + '/contact/', formData, config)
             .then((res) => {
                 console.log(res);
             })
@@ -20,6 +34,7 @@ const ContactSend = () => {
                 console.log(err);
             })
     }
+
     return (
         <>
             <form onSubmit={handleClick}>
@@ -49,13 +64,13 @@ const ContactSend = () => {
                             </div>
                             <div className="col-lg-7">
                                 <div className="contact_service_box_1">
-                                    <div className={`contact_service_h `}> Mobile Services </div>
-                                    <div className={`contact_service_h `}> Internet Marketing </div>
+                                    <div onClick={e => pushService('Mobile')} className={`contact_service_h `}> Mobile Services </div>
+                                    <div onClick={e => pushService('Internet')} className={`contact_service_h `}> Internet Marketing </div>
                                 </div>
                                 <div className="contact_service_box_2">
-                                    <div className={`contact_service_h_2 `}>Web Services </div>
-                                    <div className={`contact_service_h_2 `}>Design </div>
-                                    <div className={`contact_service_h_2 `}>Motion </div>
+                                    <div onClick={e => pushService('Web')} className={`contact_service_h_2 `}>Web Services </div>
+                                    <div onClick={e => pushService('Design')} className={`contact_service_h_2 `}>Design</div>
+                                    <div onClick={e => pushService('Motion')} className={`contact_service_h_2 `}>Motion</div>
                                 </div>
                             </div>
                         </div>
