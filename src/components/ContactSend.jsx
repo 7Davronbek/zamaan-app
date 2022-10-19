@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { toast } from 'react-toastify'
 import { API_PATH, config } from '../tools/constants'
 
 const ContactSend = () => {
@@ -13,7 +14,6 @@ const ContactSend = () => {
 
     const pushService = e => {
         setService(old => [...old, e])
-        console.log(service);
     }
 
     const handleClick = async e => {
@@ -26,12 +26,20 @@ const ContactSend = () => {
         formData.append('service', service)
         formData.append('message', message)
         formData.append('file', files)
+
         await axios.post(API_PATH + '/contact/', formData, config)
             .then((res) => {
-                console.log(res);
+                setName('')
+                setCompany('')
+                setPhone('')
+                setEmail('')
+                setService('')
+                setMessage('')
+                setFiles('')
+                toast.success("Siz bilan tez orada bog'lanamiz!", { position: "bottom-left" })
             })
             .catch(err => {
-                console.log(err);
+                toast.error("Internet Error!", { position: "bottom-left" })
             })
     }
 
@@ -87,7 +95,7 @@ const ContactSend = () => {
                                 </div>
                             </div>
                             <div className="col-7">
-                                <input onChange={e => setMessage(e.target.value)} required placeholder='Напишите*' type="text" className="contact_send_inp" />
+                                <input value={message} onChange={e => setMessage(e.target.value)} required placeholder='Напишите*' type="text" className="contact_send_inp" />
                                 <input
                                     onChange={e => setFiles(e.target.files[0])}
                                     className='d-none' type="file" id='file' />

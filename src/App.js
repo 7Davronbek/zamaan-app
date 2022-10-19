@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import Contacts from './pages/Contacts'
 import Main from './pages/Main'
 import ServicesPage from './pages/ServicesPage'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
     return (
@@ -19,6 +21,9 @@ const App = () => {
                 </Routes>
                 <Footer />
                 <ScrollToTop />
+                <ToastContainer
+                    theme="dark" 
+                    position="bottom-left"/>
             </HashRouter>
         </>
     )
