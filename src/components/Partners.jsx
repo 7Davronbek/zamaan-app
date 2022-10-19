@@ -26,25 +26,21 @@ const Partners = () => {
           disableOnInteraction: false,
         }}
         breakpoints={{
-          "@0.00": {
-            slidesPerView: 1,
+          0: {
+            slidesPerView: 1.8,
             spaceBetween: 10,
           },
-          "@0.75": {
+          767: {
             slidesPerView: 4,
             spaceBetween: 20,
           },
-          "@1.00": {
-            slidesPerView: 5,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 7,
-            spaceBetween: 50,
+          992: {
+            slidesPerView: 6,
+            spaceBetween: 20,
           },
         }}
         modules={[Autoplay]}
-        className="mySwiper"
+        className="mySwiper text-center"
       >
         <SwiperSlide><img src="img/comp1.png" alt="" /></SwiperSlide>
         <SwiperSlide><img src="img/comp2.png" alt="" /></SwiperSlide>
