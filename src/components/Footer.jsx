@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h1>@ Copyright 2022.Zamaan Designs. <span className='mx-1'><img src="/img/miniLogo.svg" alt="" /></span> All rights reserved.</h1>
+                            <h1>@ Copyright 2022.<span className='mx-1'><img src="/img/miniLogo.svg" alt="" /></span> Zamaan Designs.  All rights reserved.</h1>
                         </div>
                     </div>
                 </div>

@@ -665,6 +665,7 @@ body {
                 color: rgba(247, 247, 247, 0.5);
                 border: 0;
                 outline: none;
+                color: #fff;
             }
 
             .contact_send_add {
@@ -678,6 +679,7 @@ body {
                     font-weight: 500;
                     font-size: 42px;
                     line-height: 61px;
+                    cursor: pointer;
                     color: #FFFFFF;
                 }
 
@@ -725,6 +727,7 @@ body {
             font-weight: 500;
             font-size: 52px;
             line-height: 75px;
+            user-select: none;
             color: #FFFFFF;
         }
 
