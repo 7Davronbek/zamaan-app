@@ -295,6 +295,11 @@ body {
         height: 1210px;
         background-size: cover;
 
+        @media(max-width: 767px) {
+            height: auto;
+            background-size: 170%;
+        }
+
         .container {
             position: relative;
         }
@@ -309,6 +314,11 @@ body {
             // background: rgb(7 177 141 / 95%);
             filter: blur(30px);
             background: linear-gradient(249deg, #c50024 0%, #150185 100%);
+
+            @media(max-width: 767px) {
+                top: -65px;
+                right: -1px;
+            }
         }
 
         .back {
@@ -331,6 +341,13 @@ body {
             margin-bottom: 100px;
             text-align: end;
             margin-top: 80px;
+
+            @media(max-width: 767px) {
+                font-size: 56px;
+                line-height: 81px;
+                text-align: center;
+                margin: 80px 10px 100px;
+            }
         }
 
         .myBtn {
@@ -353,6 +370,15 @@ body {
                     box-shadow: 0px 1px 10px 3px rgba(74, 58, 255, 0.55), inset 0px 4px 27px rgba(255, 255, 255, 0.5);
                     color: #fff;
                 }
+
+                @media(max-width: 767px) {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+            }
+
+            @media(max-width: 767px) {
+                text-align: center;
             }
         }
     }
@@ -387,6 +413,10 @@ body {
                 &.half {
                     color: #FFFFFF52;
                 }
+            }
+
+            @media(max-width: 992px) {
+                display: none;
             }
         }
 
@@ -450,6 +480,12 @@ body {
                             .burger2 {
                                 transform: rotate(90deg);
                             }
+
+                            @media(max-width: 992px) {
+                                width: 36px;
+                                height: 36px;
+                                margin-left: 15px;
+                            }
                         }
 
                         &.collapsed {
@@ -460,6 +496,12 @@ body {
                             .burger {
                                 display: block;
                             }
+                        }
+
+                        @media(max-width: 992px) {
+                            font-size: 20px;
+                            line-height: 29px;
+                            padding: 28px 30px;
                         }
                     }
                 }
@@ -497,6 +539,10 @@ body {
                     }
                 }
             }
+
+            @media(max-width: 992px) {
+                width: 100% !important; 
+            }
         }
     }
 
@@ -513,6 +559,11 @@ body {
             right: 0;
             top: -50%;
             z-index: -1;
+
+            @media(max-width: 767px) {
+                top: 0;
+                transform: scale(1.5);
+            }
         }
 
         .swiper {
@@ -539,6 +590,16 @@ body {
             color: #fff;
             margin-bottom: 50px;
             text-align: center;
+            
+            @media(max-width: 992px) {
+                margin-bottom: 24px;
+                font-size: 36px;
+                line-height: 52px;
+            }
+        }
+
+        @media(max-width: 767px) {
+            padding: 10px 0 80px;
         }
     }
 
