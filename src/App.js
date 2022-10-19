@@ -22,8 +22,9 @@ const App = () => {
                 <Footer />
                 <ScrollToTop />
                 <ToastContainer
-                    theme="dark" 
-                    position="bottom-left"/>
+                    theme="dark"
+                    position="bottom-left"
+                />
             </HashRouter>
         </>
     )
