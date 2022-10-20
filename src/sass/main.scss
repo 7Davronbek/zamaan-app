@@ -15,7 +15,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background: #0F0F0F;
+    background: #000000;
     font-family: 'Jost', sans-serif;
 
     .justify-content-md-center {
@@ -1029,6 +1029,25 @@ body {
     .Products {
         padding: 0 0 30px;
 
+        .tab-pane {
+            transform: translateY(50px);
+            opacity: 0;
+            // visibility: hidden;
+            transition: all .5s ease-in-out;
+
+            .cards {
+            }
+
+            &.active {
+                opacity: 1;
+                // visibility: visible;
+                transform: translate(0);
+
+                .cards {
+                }
+            }
+        } 
+
         .cards {
             height: 600px;
             position: relative;
@@ -1081,7 +1100,7 @@ body {
                 }
 
                 h5 {
-                    font-size: 56px;
+                    font-size: 52px;
                     line-height: 81px;
                     bottom: 50%;
                     left: 50%;
@@ -1089,7 +1108,7 @@ body {
                 }
 
                 h4 {
-                    font-size: 36px;
+                    font-size: 34px;
                     line-height: 20px;
                     bottom: 50%;
                     left: 50%;
@@ -1109,7 +1128,7 @@ body {
             transition: all .3s ease-in-out;
             cursor: pointer;
 
-            &:hover {
+            &:hover, &.active {
                 background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
                 border-color: #4A3AFF;
                 box-shadow: inset 0px 4px 27px rgba(255, 255, 255, 0.7);

@@ -9,8 +9,8 @@ const Footer = () => {
                         <div className="col-lg-4">
                             <div className="logo"><img src="/img/logo.png" alt="" /></div>
                             <div className="socialWrap">
-                                <a href="/"><img src="/img/insta.svg" alt="" /></a>
-                                <a href="/"><img src="/img/facebook.svg" alt="" /></a>
+                                <a target={'_blank'} rel="noreferrer" href="https://www.instagram.com/zamaangroup/"><img src="/img/insta.svg" alt="" /></a>
+                                <a target={'_blank'} rel="noreferrer" href="https://www.facebook.com/zamaangroup"><img src="/img/facebook.svg" alt="" /></a>
                                 <a href="/"><img src="/img/telegram.svg" alt="" /></a>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h1>@ Copyright 2022.<span className='mx-1'><img src="/img/miniLogo.svg" alt="" /></span> Zamaan Designs.  All rights reserved.</h1>
+                            <h1 className='d-flex align-items-center justify-content-center'>@ Copyright 2022.<span className='mx-1'><img src="/img/miniLogo.svg" alt="" /></span> Zamaan.  All rights reserved.</h1>
                         </div>
                     </div>
                 </div>
