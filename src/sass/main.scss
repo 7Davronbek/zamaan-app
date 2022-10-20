@@ -544,6 +544,10 @@ body {
                 width: 100% !important;
             }
         }
+
+        @media(max-width: 767px) {
+            margin-bottom: 50px;
+        }
     }
 
     .Partners {
@@ -1035,18 +1039,12 @@ body {
             // visibility: hidden;
             transition: all .5s ease-in-out;
 
-            .cards {
-            }
-
             &.active {
                 opacity: 1;
                 // visibility: visible;
                 transform: translate(0);
-
-                .cards {
-                }
             }
-        } 
+        }
 
         .cards {
             height: 600px;
@@ -1055,6 +1053,12 @@ body {
             margin-bottom: 30px;
             overflow: hidden;
             border-radius: 30px;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 
             h5,
             h4 {
@@ -1080,6 +1084,11 @@ body {
                 letter-spacing: -0.01em;
                 color: rgba(255, 255, 255, 0.6);
                 transition: all .4s ease-in-out;
+
+                @media(max-width: 767px) {
+                    font-size: 16px;
+                    line-height: 12px;
+                }
             }
 
             h5 {
@@ -1091,6 +1100,11 @@ body {
                 bottom: 44px;
                 left: 24px;
                 transition: all .4s ease-in-out;
+
+                @media(max-width: 767px) {
+                    font-size: 20px;
+                    line-height: 29px;
+                }
             }
 
             &:hover {
@@ -1105,6 +1119,14 @@ body {
                     bottom: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+
+                    @media(max-width: 767px) {
+                        font-size: 34px;
+                        line-height: 36px;
+                        bottom: 44px;
+                        left: 24px;
+                        transform: translate(0, 0);
+                    }
                 }
 
                 h4 {
@@ -1113,7 +1135,21 @@ body {
                     bottom: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+
+                    @media(max-width: 767px) {
+                        font-size: 25px;
+                        line-height: 17px;
+                        bottom: 47%;
+                        bottom: 24px;
+                        left: 24px;
+                        transform: translate(0%, 0%);
+
+                    }
                 }
+            }
+
+            @media(max-width: 767px) {
+                height: 450px;
             }
         }
 
@@ -1128,10 +1164,17 @@ body {
             transition: all .3s ease-in-out;
             cursor: pointer;
 
-            &:hover, &.active {
+            &:hover,
+            &.active {
                 background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
                 border-color: #4A3AFF;
                 box-shadow: inset 0px 4px 27px rgba(255, 255, 255, 0.7);
+            }
+
+            @media(max-width: 767px) {
+                font-size: 14px;
+                line-height: 20px;
+                padding: 10px 20px
             }
         }
 

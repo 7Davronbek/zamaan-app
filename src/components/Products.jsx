@@ -237,67 +237,59 @@ const Products = () => {
 
                     <TabPane tabId="5" className=''>
                         <div className="row">
-                            <div className="col-lg-6">
-                                <a href='/' className="cards">
-                                    <img className='w-100' src='/img/portfolio/17.png' alt='zamaan portfolio' />
-                                    <h5>pizza.uz</h5>
-                                    <h4>Еда</h4>
+                            <div className="col-lg-12">
+                                <a className="cards">
+                                    <video loop autoPlay>
+                                        <source src='/video/1.mp4' type="video/mp4" />
+                                    </video>
+                                    <h5>“Choco” палочки</h5>
+                                    <h4>Sifat</h4>
                                 </a>
                             </div>
-                            <div className="col-lg-6">
-                                <a href='/' className="cards">
-                                    <img className='w-100' src='/img/portfolio/18.png' alt='zamaan portfolio' />
-                                    <h5>Фаст-фуд</h5>
-                                    <h4>Еда</h4>
+                            <div className="col-lg-12">
+                                <a className="cards">
+                                    <video loop autoPlay>
+                                        <source src='/video/2.mp4' type="video/mp4" />
+                                    </video>
+                                    <h5>Akfa windows</h5>
+                                    <h4>Akfa</h4>
                                 </a>
                             </div>
-                            <div className="col-lg-6">
-                                <a href='/' className="cards">
-                                    <img className='w-100' src='/img/portfolio/19.png' alt='zamaan portfolio' />
-                                    <h5>Fresh Pizza</h5>
-                                    <h4>Еда</h4>
+                            <div className="col-lg-12">
+                                <a className="cards">
+                                    <video loop autoPlay>
+                                        <source src='/video/3.mp4' type="video/mp4" />
+                                    </video>
+                                    <h5>Musaffosha Tabiiy Sut</h5>
+                                    <h4>Musaffo</h4>
                                 </a>
                             </div>
-                            <div className="col-lg-6">
-                                <a href='/' className="cards">
-                                    <img className='w-100' src='/img/portfolio/20.png' alt='zamaan portfolio' />
-                                    <h5>ilpatio_tashkent</h5>
-                                    <h4>Ресторан</h4>
+                            <div className="col-lg-12">
+                                <a className="cards">
+                                    <video loop autoPlay>
+                                        <source src='/video/4.mp4' type="video/mp4" />
+                                    </video>
+                                    <h5>Кредит "Старт"</h5>
+                                    <h4>Davr Bank</h4>
                                 </a>
                             </div>
                         </div>
                     </TabPane>
 
-
-
                     <TabPane tabId="6" className=''>
                         <div className="row">
                             <div className="col-lg-6">
                                 <a href='/' className="cards">
-                                    <img className='w-100' src='/img/portfolio/13.png' alt='zamaan portfolio' />
-                                    <h5>pizza.uz</h5>
-                                    <h4>Еда</h4>
+                                    <img className='w-100' src='/img/portfolio/17.png' alt='zamaan portfolio' />
+                                    <h5>Express 24</h5>
+                                    <h4>Работа в компании "Express 24"</h4>
                                 </a>
                             </div>
                             <div className="col-lg-6">
                                 <a href='/' className="cards">
-                                    <img className='w-100' src='/img/portfolio/14.png' alt='zamaan portfolio' />
-                                    <h5>Фаст-фуд</h5>
-                                    <h4>Еда</h4>
-                                </a>
-                            </div>
-                            <div className="col-lg-6">
-                                <a href='/' className="cards">
-                                    <img className='w-100' src='/img/portfolio/15.png' alt='zamaan portfolio' />
-                                    <h5>Fresh Pizza</h5>
-                                    <h4>Еда</h4>
-                                </a>
-                            </div>
-                            <div className="col-lg-6">
-                                <a href='/' className="cards">
-                                    <img className='w-100' src='/img/portfolio/16.png' alt='zamaan portfolio' />
-                                    <h5>ilpatio_tashkent</h5>
-                                    <h4>Ресторан</h4>
+                                    <img className='w-100' src='/img/portfolio/18.png' alt='zamaan portfolio' />
+                                    <h5>All Saver Bot</h5>
+                                    <h4>Для скачивания видео из Secial Media</h4>
                                 </a>
                             </div>
                         </div>
