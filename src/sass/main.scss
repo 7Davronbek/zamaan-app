@@ -131,6 +131,7 @@ body {
                 &:nth-child(1) {
                     margin: 0;
                 }
+
             }
 
         }
@@ -218,7 +219,7 @@ body {
                     transition: all .3s ease-in-out;
 
                     @media (max-width:992px) {
-                        margin: 0 0 10px !important;
+                        margin: 0 0 20px !important;
                         text-align: left;
 
                         a {
@@ -236,7 +237,7 @@ body {
 
                 @media (max-width:992px) {
                     flex-direction: column;
-                    margin-top: 50%;
+                    margin-top: 60%;
                 }
 
 
@@ -1293,6 +1294,10 @@ body {
                     margin-top: 30px;
                 }
             }
+
+            @media(max-width: 992px) {
+                display: none;
+            }
         }
     }
 
@@ -1306,6 +1311,10 @@ body {
             color: rgba(255, 255, 255, 0.7);
             padding: 17px 0 20px;
             text-align: center;
+        }
+
+        @media(max-width: 992px) {
+            // display: none;
         }
     }
 }

@@ -6,6 +6,7 @@ import {
     AccordionItem,
 } from 'reactstrap';
 const Services = () => {
+
     const [open, setOpen] = useState('1');
     const toggle = (id) => {
         if (open === id) {
@@ -14,7 +15,6 @@ const Services = () => {
             setOpen(id);
         }
     };
-    // const [wrap, setwrap] = useState(initialState);
 
     return (
         <div className='Services'>
