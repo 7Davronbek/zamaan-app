@@ -5,6 +5,7 @@ import { API_PATH } from '../tools/constants'
 const Products = () => {
     const [productTitle, setProductTitle] = useState([])
     const [products, setProducts] = useState([])
+    const [id, setId] = useState('')
 
     // const [datas, setDatas] = useState(products)
     // const allCategories = ['All', ...new Set(datas.map((item) => item.service))]
@@ -19,6 +20,16 @@ const Products = () => {
     //         return
     //     }
     // }
+
+    const getProductById = async ()  => {
+        await axios.get(API_PATH + `/projects/?pk=${id === '' ? '' : id}`)
+            .then((res) => {
+                setProducts(res.data)
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    } 
 
     const getTitle = async () => {
         await axios.get(API_PATH + '/services')
@@ -41,9 +52,11 @@ const Products = () => {
     }
 
     useEffect(() => {
+        console.log(productTitle);
         getTitle()
         getProducts()
-    }, [])
+        getProductById()
+    }, [id])
 
     return (
         <div className='Products'>
@@ -54,6 +67,7 @@ const Products = () => {
                             {productTitle && productTitle.map((item, index) => (
                                 <h6
                                     // onClick={() => filterCategory(item)}
+                                    onClick={e => setId(item.id)}
                                     key={index}>{item.name}</h6>
                             ))}
                         </div>

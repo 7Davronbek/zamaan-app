@@ -120,7 +120,7 @@ body {
 
                     &:hover,
                     &.active {
-                        color: #fff;
+                        color: $gradient;
 
                         &::after {
                             width: 42px;
@@ -607,6 +607,10 @@ body {
         padding-top: 120px;
         padding-bottom: 70px;
 
+        @media(max-width:992px) {
+            padding-top: 100px;
+        }
+
         .contact_h {
             font-family: 'Jost';
             font-style: normal;
@@ -615,9 +619,44 @@ body {
             line-height: 92px;
             text-transform: uppercase;
             color: #FFFFFF;
+
+            @media(max-width:1300px) {
+                font-size: 60px;
+                line-height: 80px;
+            }
+
+            @media(max-width:992px) {
+                text-align: center;
+            }
+
+            @media(max-width:576px) {
+                font-size: 55px;
+            }
+
+            @media(max-width:500px) {
+                font-size: 45px;
+                line-height: 60px;
+            }
+
+            @media(max-width:420px) {
+                font-size: 40px;
+                line-height: 60px;
+            }
+
+            @media(max-width:380px) {
+                font-size: 34px;
+                line-height: 50px;
+            }
         }
 
         .contact_soc {
+            text-align: end;
+
+            @media(max-width:992px) {
+                margin-top: 50px;
+                text-align: center;
+            }
+
             .contact_mail {
                 font-family: 'Jost';
                 font-style: normal;
@@ -626,6 +665,21 @@ body {
                 line-height: 34px;
                 text-align: center;
                 color: #FFFFFF;
+
+                @media(max-width:1300px) {
+                    font-size: 36px;
+                }
+
+
+
+                @media(max-width:500px) {
+                    font-size: 30px;
+                }
+
+                @media(max-width:400px) {
+                    font-size: 24px;
+                }
+
             }
 
             .contact_icon {
@@ -648,6 +702,34 @@ body {
                 font-size: 52px;
                 line-height: 75px;
                 color: #FFFFFF;
+
+                @media(max-width:992px) {
+                    text-align: center;
+                    line-height: 65px;
+                    margin-bottom: 50px;
+                }
+
+                @media(max-width:576px) {
+                    font-size: 45px;
+                    line-height: 55px;
+                }
+
+                @media(max-width:430px) {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                @media(max-width:380px) {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+
+                @media(max-width:330px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+
+
             }
 
             .contact_send_inp {
@@ -666,6 +748,25 @@ body {
                 border: 0;
                 outline: none;
                 color: #fff;
+
+                @media(max-width:992px) {
+                    height: 100px;
+                    font-size: 32px;
+                }
+
+                @media(max-width:576px) {
+                    padding: 20px 30px;
+                    height: 90px;
+                    font-size: 28px;
+                    line-height: 35px;
+                }
+
+                @media(max-width:450px) {
+                    padding: 15px 20px;
+                    height: 80px;
+                    font-size: 28px;
+                    line-height: 35px;
+                }
             }
 
             .contact_send_add {
@@ -681,6 +782,29 @@ body {
                     line-height: 61px;
                     cursor: pointer;
                     color: #FFFFFF;
+
+
+                    @media(max-width:480px) {
+                        margin-left: 15px;
+                        font-size: 38px;
+                    }
+
+                    @media(max-width:400px) {
+                        margin-left: 15px;
+                        font-size: 30px;
+                    }
+
+                    @media(max-width:350px) {
+                        margin-left: 15px;
+                        font-size: 26px;
+                    }
+                }
+
+                .contact_send_img {
+
+                    // @media(max-width:480px) {
+                    //     width: 45px;
+                    // }
                 }
 
 
@@ -701,6 +825,25 @@ body {
                 line-height: 60px;
                 color: #0F0F0F;
                 transition: 0.5s;
+
+                @media(max-width:992px) {
+                    height: 100px;
+                    font-size: 32px;
+                }
+
+                @media(max-width:576px) {
+                    padding: 20px 30px;
+                    height: 90px;
+                    font-size: 28px;
+                    line-height: 35px;
+                }
+
+                @media(max-width:450px) {
+                    padding: 15px 20px;
+                    height: 80px;
+                    font-size: 28px;
+                    line-height: 35px;
+                }
 
                 &:hover {
                     background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
@@ -729,6 +872,10 @@ body {
             line-height: 75px;
             user-select: none;
             color: #FFFFFF;
+
+            @media(max-width:992px) {
+                text-align: center;
+            }
         }
 
         .contact_service_box_1 {
@@ -773,6 +920,33 @@ body {
                     font-size: 20px;
                 }
 
+                @media(max-width:576px) {
+                    padding: 0 35px;
+                    font-size: 20px;
+                }
+
+                @media(max-width:480px) {
+                    padding: 0 20px;
+                    font-size: 18px;
+                    height: 65px;
+                }
+
+                @media(max-width:400px) {
+                    padding: 0 18px;
+                    font-size: 17px;
+                }
+
+                @media(max-width:380px) {
+                    padding: 0 18px;
+                    font-size: 16px;
+                }
+
+                @media(max-width:350px) {
+                    padding: 0 16px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
                 &.active {
                     background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
                     border: 1px solid #4A3AFF;
@@ -803,6 +977,7 @@ body {
                 line-height: 35px;
                 color: #FFFFFF;
                 transition: 0.3s ease-in-out;
+                text-align: center;
 
                 &:hover {
                     background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
@@ -815,8 +990,32 @@ body {
                 }
 
                 @media(max-width:767px) {
-                    font-size: 25px;
+                    font-size: 15px;
                 }
+
+                @media(max-width:576px) {
+                    padding: 0 30px;
+                    font-size: 20px;
+                }
+
+                @media(max-width:480px) {
+                    padding: 0 20px;
+                    font-size: 18px;
+                    height: 60px;
+                }
+
+                @media(max-width:400px) {
+                    padding: 0 20px;
+                    font-size: 16px;
+                }
+
+                @media(max-width:360px) {
+                    padding: 0 20px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+
 
                 &.active {
                     background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);

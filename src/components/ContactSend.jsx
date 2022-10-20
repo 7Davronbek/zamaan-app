@@ -7,7 +7,7 @@ const ContactSend = () => {
     const [name, setName] = useState('')
     const [company, setCompany] = useState('')
     const [phone, setPhone] = useState('')
-    const [email, setEmail] = useState('')
+    // const [email, setEmail] = useState('')
     const [service, setService] = useState('')
     const [message, setMessage] = useState('')
     const [files, setFiles] = useState('')
@@ -22,7 +22,7 @@ const ContactSend = () => {
         formData.append('name', name)
         formData.append('company', company)
         formData.append('phone', phone)
-        formData.append('email', email)
+        // formData.append('email', email)
         formData.append('service', service)
         formData.append('message', message)
         formData.append('file', files)
@@ -32,7 +32,7 @@ const ContactSend = () => {
                 setName('')
                 setCompany('')
                 setPhone('')
-                setEmail('')
+                // setEmail('')
                 setService('')
                 setMessage('')
                 setFiles('')
@@ -49,14 +49,14 @@ const ContactSend = () => {
                 <div className="ContactSend">
                     <div className="container">
                         <div className="row contact_send_box">
-                            <div className="col-5">
+                            <div className="col-lg-5">
                                 <div className="contact_send_h">Ваши контакты</div>
                             </div>
-                            <div className="col-7">
+                            <div className="col-lg-7">
                                 <input value={name} onChange={e => setName(e.target.value)} required placeholder='Имя*' type="text" className="contact_send_inp" />
                                 <input value={company} onChange={e => setCompany(e.target.value)} required placeholder='Компания*' type="text" className="contact_send_inp" />
-                                <input value={phone} onChange={e => setPhone(e.target.value)} required placeholder='Номер телефона*' type="text" className="contact_send_inp" />
-                                <input value={email} onChange={e => setEmail(e.target.value)} placeholder='E-mail' type="email" className="contact_send_inp" />
+                                <input value={phone} onChange={e => setPhone(e.target.value)} required placeholder='Номер телефона*' type="number" className="contact_send_inp" />
+                                {/* <input value={email} onChange={e => setEmail(e.target.value)} placeholder='E-mail' type="email" className="contact_send_inp" /> */}
                             </div>
                         </div>
 
@@ -89,12 +89,12 @@ const ContactSend = () => {
                 <div className="ContactSend second">
                     <div className="container">
                         <div className="row contact_send_box">
-                            <div className="col-5">
+                            <div className="col-lg-5">
                                 <div className="contact_send_h">
                                     Расскажите нам все, что вам нужно
                                 </div>
                             </div>
-                            <div className="col-7">
+                            <div className="col-lg-7">
                                 <input value={message} onChange={e => setMessage(e.target.value)} required placeholder='Напишите*' type="text" className="contact_send_inp" />
                                 <input
                                     onChange={e => setFiles(e.target.files[0])}
