@@ -134,6 +134,10 @@ body {
 
             }
 
+            @media(max-width: 992px) {
+                height: 70%;
+            }
+
         }
 
         &.navbarActive {
@@ -152,6 +156,28 @@ body {
             margin-left: auto;
             outline: none;
             padding: 6px 12px;
+        }
+
+        select {
+            background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
+            border-radius: 6px;
+            color: #fff;
+            padding: 5px 10px;
+            margin-left: 30px;
+            font-size: 20px;
+            line-height: 29px;
+
+            option {
+                color: #000;
+                background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+            @media(max-width: 992px) {
+                margin-left: 0;
+                margin-top: auto;
+            }
         }
 
         .burger {
@@ -237,7 +263,7 @@ body {
 
                 @media (max-width:992px) {
                     flex-direction: column;
-                    margin-top: 60%;
+                    margin-top: 80%;
                 }
 
 
@@ -261,6 +287,7 @@ body {
                     width: 100%;
                     position: absolute;
                     bottom: 0;
+                    z-index: -1;
 
                     img {
                         width: 100%;
