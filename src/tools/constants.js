@@ -6,3 +6,5 @@ export const config = {
     "Content-Type": "multipart/form-data",
   },
 };
+
+export const LANGUAGE = 'zamaan-app'
