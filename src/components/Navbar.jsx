@@ -45,8 +45,8 @@ const Navbar = () => {
                         <div className={`col-3 mobileWrap ${burger ? '' : 'burgered'}`}>
                             <ul className="nav-menu">
                                 <li><Link className={` ${location.pathname === '/' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/">{getText('main')}</Link></li>
-                                <li><Link className={` ${location.pathname === '/services' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/services">Услуги</Link></li>
-                                <li><Link className={` ${location.pathname === '/contacts' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/contacts">Контакты</Link></li>
+                                <li><Link className={` ${location.pathname === '/services' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/services">{getText('services')}</Link></li>
+                                <li><Link className={` ${location.pathname === '/contacts' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/contacts">{getText('contacts')}</Link></li>
                                 <select onChange={changeLanguage} name="" id="">
                                     <option selected={getLanguage() === 'ru'} value="ru">Рус</option>
                                     <option selected={getLanguage() === 'uz'} value="uz">Uzb</option>

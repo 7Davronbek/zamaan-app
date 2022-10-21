@@ -1,4 +1,5 @@
 import React from 'react'
+import { getText } from '../locales'
 
 const Footer = () => {
     return (
@@ -17,10 +18,10 @@ const Footer = () => {
 
                         <div className="col-lg-7 ms-auto right">
 
-                            <a href="/">Адрес: Город Ташкент, Яшнабадский район, Улица Ташсельмаш 8. Пн-Сб 09:00 - 18:00</a>
-                            <h5>Контакты:</h5>
+                            <a href="/">{getText('footer1')}</a>
+                            <h5>{getText('footer2')}</h5>
                             <a href="tel:+998 90 823 28 38">+998 90 823 28 38</a>
-                            <a target={'_blank'} href="https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=zamaangroupuz@gmail.com">zamaangroupuz@gmail.com</a>
+                            <a target={'_blank'} rel="noreferrer" href="https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=zamaangroupuz@gmail.com">zamaangroupuz@gmail.com</a>
 
                         </div>
                     </div>

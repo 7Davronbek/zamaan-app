@@ -6,6 +6,7 @@ import "swiper/css";
 
 // import required modules
 import { Autoplay } from "swiper";
+import { getText } from '../locales';
 
 
 const Partners = () => {
@@ -15,7 +16,7 @@ const Partners = () => {
         <img className='w-100' src="img/partners.png" alt="" />
       </div>
       <h2>
-      Нам доверяют
+      {getText('beliveUs')}
       </h2>
             <Swiper
         slidesPerView={1}
