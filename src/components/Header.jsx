@@ -1,3 +1,4 @@
+import { getText } from "../locales"
 
 
 const Header = () => {
@@ -8,9 +9,9 @@ const Header = () => {
                 <div className="blur"></div>
                 <div className="row justify-content-end">
                     <div className="col-lg-9">
-                        <h1>Нам важны ваши цели!</h1>
+                        <h1>{getText('target')}</h1>
                         <div className="myBtn">
-                            <a className='btn' target={"_blank"} rel="noreferrer" href="tel: +9989082328">Бесплатная консультация</a>
+                            <a className='btn' target={"_blank"} rel="noreferrer" href="tel: +9989082328">{getText('freeConsult')}</a>
                         </div>
                     </div>
                 </div>

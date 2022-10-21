@@ -5,6 +5,7 @@ import {
     AccordionHeader,
     AccordionItem,
 } from 'reactstrap';
+import { getText } from '../locales';
 const Services = () => {
 
     const [open, setOpen] = useState('1');
@@ -22,18 +23,18 @@ const Services = () => {
                 <div className="d-flex">
                     <div className="titles  border1">
                         <div className="title">
-                            <h2>Услуги</h2>
-                            <h2 className='half'>Проекты</h2>
+                            <h2>{getText('services1')}</h2>
+                            <h2 className='half'>{getText('services2')}</h2>
                         </div>
                         <div className="title">
-                            <h2 className='half'>Услуги</h2>
-                            <h2>Проекты</h2>
+                            <h2 className='half'>{getText('services1')}</h2>
+                            <h2>{getText('services2')}</h2>
                         </div>
                     </div>
                     <Accordion className='service__list border2' open={open} toggle={toggle}>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="1">
-                                Разработка приложения  <div className='burger'>
+                                {getText('mobileCreate')} <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
@@ -51,7 +52,7 @@ const Services = () => {
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="2">
-                                Разработка сайтов   <div className='burger'>
+                                {getText('webCreate')}   <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
@@ -69,7 +70,7 @@ const Services = () => {
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="3">
-                                Комплексный маркетинг  <div className='burger'>
+                                {getText('marketing')}  <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
@@ -87,8 +88,7 @@ const Services = () => {
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="4">
-                                Разработка СRM систем
-                                и телеграм ботов  <div className='burger'>
+                                {getText('crmandbot')}  <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
@@ -106,7 +106,7 @@ const Services = () => {
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="5">
-                                3D Анимация и моушен  <div className='burger'>
+                                {getText('threedAnimation')}  <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
@@ -124,7 +124,7 @@ const Services = () => {
                         </AccordionItem>
                         <AccordionItem className='wrap'>
                             <AccordionHeader targetId="6">
-                                Дизайн  <div className='burger'>
+                                {getText('design')}  <div className='burger'>
                                     <div className="burger1"></div>
                                     <div className="burger2"></div>
                                 </div>
