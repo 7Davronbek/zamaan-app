@@ -1074,6 +1074,30 @@ body {
             }
         }
 
+        .moushen {
+
+            .cards {
+
+                &:hover {
+
+                    h5 {
+                        bottom: 44px;
+                        left: 24px;
+                        transform: translate(0, 0);
+                        font-size: 32px;
+                        line-height: 46px;
+                    }
+
+                    h4 {
+                        bottom: 24px;
+                        left: 24px;
+                        transform: translate(0, 0);
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
         .cards {
             height: 680px;
             position: relative;
@@ -1230,9 +1254,11 @@ body {
     }
 
     .LetsTalk {
-        background: #2B2B2B;
+        // background: #2B2B2B;
+        background: linear-gradient(180deg, #2B2B2B 0%, #2B2B2B 100%);
         padding: 55px 0;
         display: block;
+        transition: all .3s ease-in-out;
 
         h1 {
             font-weight: 500;
@@ -1245,6 +1271,7 @@ body {
             justify-content: space-between;
 
             span {
+                transition: all .3s ease-in-out;
 
                 img {
 
@@ -1261,6 +1288,18 @@ body {
             @media(max-width: 767px) {
                 font-size: 22px;
                 line-height: 46px;
+            }
+        }
+
+        &:hover {
+            background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
+            box-shadow: inset 0px 4px 27px rgba(255, 255, 255, 0.7);
+
+            h1 {
+
+                span {
+                    transform: translateX(20px);
+                }
             }
         }
     }

@@ -8,6 +8,7 @@ export const ru = {
 
     'services1': 'Услуги',
     'services2': 'Проекты',
+    
     'mobileCreate': 'Разработка приложения',
     'webCreate': 'Разработка сайтов',
     'marketing': 'Комплексный маркетинг',

@@ -235,11 +235,11 @@ const Products = () => {
                         </div>
                     </TabPane>
 
-                    <TabPane tabId="5" className=''>
+                    <TabPane tabId="5" className='moushen'>
                         <div className="row">
                             <div className="col-lg-12">
                                 <a className="cards">
-                                    <video loop autoPlay>
+                                    <video muted loop autoPlay>
                                         <source src='/video/1.mp4' type="video/mp4" />
                                     </video>
                                     <h5>“Choco” палочки</h5>
@@ -248,7 +248,7 @@ const Products = () => {
                             </div>
                             <div className="col-lg-12">
                                 <a className="cards">
-                                    <video loop autoPlay>
+                                    <video muted loop autoPlay>
                                         <source src='/video/2.mp4' type="video/mp4" />
                                     </video>
                                     <h5>Akfa windows</h5>
@@ -257,7 +257,7 @@ const Products = () => {
                             </div>
                             <div className="col-lg-12">
                                 <a className="cards">
-                                    <video loop autoPlay>
+                                    <video muted loop autoPlay>
                                         <source src='/video/3.mp4' type="video/mp4" />
                                     </video>
                                     <h5>Musaffosha Tabiiy Sut</h5>
@@ -266,7 +266,7 @@ const Products = () => {
                             </div>
                             <div className="col-lg-12">
                                 <a className="cards">
-                                    <video loop autoPlay>
+                                    <video muted loop autoPlay>
                                         <source src='/video/4.mp4' type="video/mp4" />
                                     </video>
                                     <h5>Кредит "Старт"</h5>

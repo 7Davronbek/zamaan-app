@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -8,8 +8,12 @@ import Main from './pages/Main'
 import ServicesPage from './pages/ServicesPage'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { getLanguage } from './locales'
 
 const App = () => {
+    useEffect(() => {
+        document.body.classList.toggle('uzActive', getLanguage() === 'uz');
+    }, [])
     return (
         <>
             <HashRouter>
