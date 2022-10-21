@@ -6,7 +6,7 @@ export const uz = {
     'target': "Biz sizning maqsadlaringiz haqida qayg'uramiz!",
     'freeConsult': 'Bepul maslahat',
 
-    'services1': 'Xizmatlar',
+    'services1': 'Xizmatlar', // 2
     'services2': 'Loyihalar',
     'mobileCreate': 'Mobil ilovani yaratish',
     'webCreate': 'Veb-sayt yaratish',
@@ -20,6 +20,19 @@ export const uz = {
     'letsTalk': 'gaplashamiz',
 
     'footer1': " Manzil: Toshkent shahri, Yashnobod tumani, Toshselmash ko'chasi 8. Dushanba-Shanba 09:00 - 18:00",
-    'footer2': "Kontaktlar:"
+    'footer2': "Kontaktlar:",
+
+    'letsWork': 'BIRGA ISHLAYLIK!',
+
+    'yourContacts': 'Sizning kontaktlaringiz',
+
+    'name': 'Ism',
+    'company': 'Kompaniya',
+    'phoneNumber': 'Telefon raqami',
+    'message': "Sizga kerak bo'lgan hamma narsani bizga yozing",
+    'message2': 'Yozing',
+    'file': 'Fayl qo’shish',
+    'send': 'Yuborish'
+
 
 }

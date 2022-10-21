@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactSend from '../components/ContactSend'
+import { getText } from '../locales'
 
 const Contacts = () => {
     return (
@@ -8,7 +9,7 @@ const Contacts = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
-                            <div className="contact_h">ДАВАЙ РАБОТАТЬ ВМЕСТЕ !</div>
+                            <div className="contact_h">{getText('letsWork')}</div>
                         </div>
                         <div className="col-lg-6">
                             <div className="contact_soc">
