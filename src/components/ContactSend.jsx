@@ -20,6 +20,7 @@ const ContactSend = () => {
     const handleClick = async e => {
         e.preventDefault()
         const formData = new FormData()
+        const formData2 = new FormData()
         formData.append('name', name)
         formData.append('company', company)
         formData.append('phone', phone)
@@ -28,16 +29,30 @@ const ContactSend = () => {
         formData.append('message', message)
         formData.append('file', files)
 
+
+        formData2.append('name', name)
+        formData2.append('company', company)
+        formData2.append('phone', phone)
+        formData2.append('message', message)
+        formData2.append('service', service)
+
         await axios.post(API_PATH + '/contact/', formData, config)
             .then((res) => {
-                setName('')
-                setCompany('')
-                setPhone('')
-                // setEmail('')
-                setService('')
-                setMessage('')
-                setFiles('')
-                toast.success("Siz bilan tez orada bog'lanamiz!", { position: "bottom-left" })
+                axios.post(API_PATH + '/telegram-send/', formData2, config)
+                    .then((res2) => {
+                        console.log(res2);
+                        setName('')
+                        setCompany('')
+                        setPhone('')
+                        // setEmail('')
+                        setService('')
+                        setMessage('')
+                        setFiles('')
+                        toast.success("Siz bilan tez orada bog'lanamiz!", { position: "bottom-left" })
+                    })
+                    .catch((err2) => {
+                        toast.error("Internet Error!", { position: "bottom-left" })
+                    })
             })
             .catch(err => {
                 toast.error("Internet Error!", { position: "bottom-left" })
