@@ -41,12 +41,12 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="1">
 
-                                <h6>Создадим для вас:</h6>
+                                <h6>{getText('suggest')}</h6>
                                 <ul>
-                                    <li>Интернет магазин</li>
-                                    <li> Сайт визитка</li>
-                                    <li>Корпоративные сайты</li>
-                                    <li>Сложные системы</li>
+                                    <li>{getText('mobileCreate2')}</li>
+                                    <li>{getText('mobileCreate3')}</li>
+                                    <li>{getText('mobileCreate4')}</li>
+                                    <li>{getText('mobileCreate5')}</li>
                                 </ul>
                             </AccordionBody>
                         </AccordionItem>
@@ -59,12 +59,14 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="2">
 
-                                <h6>Создадим для вас:</h6>
+                                <h6>{getText('suggest')}</h6>
                                 <ul>
-                                    <li>Интернет магазин</li>
-                                    <li> Сайт визитка</li>
-                                    <li>Корпоративные сайты</li>
-                                    <li>Сложные системы</li>
+                                    <li>{getText('webCreate2')}</li>
+                                    <li>{getText('webCreate3')}</li>
+                                    <li>{getText('webCreate4')}</li>
+                                    <li>{getText('webCreate5')}</li>
+                                    <li>{getText('webCreate6')}</li>
+                                    <li>{getText('webCreate7')}</li>
                                 </ul>
                             </AccordionBody>
                         </AccordionItem>
@@ -77,12 +79,14 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="3">
 
-                                <h6>Создадим для вас:</h6>
+                                <h6>{getText('suggest')}</h6>
                                 <ul>
-                                    <li>Интернет магазин</li>
-                                    <li> Сайт визитка</li>
-                                    <li>Корпоративные сайты</li>
-                                    <li>Сложные системы</li>
+                                    <li> {getText('marketing2')}</li>
+                                    <li> {getText('marketing3')}</li>
+                                    <li> {getText('marketing4')}</li>
+                                    <li> {getText('marketing5')}</li>
+                                    <li> {getText('marketing6')}</li>
+                                    <li> {getText('marketing7')}</li>
                                 </ul>
                             </AccordionBody>
                         </AccordionItem>

@@ -44,7 +44,6 @@ const ContactSend = () => {
                         setName('')
                         setCompany('')
                         setPhone('')
-                        // setEmail('')
                         setService('')
                         setMessage('')
                         setFiles('')
