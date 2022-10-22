@@ -140,7 +140,7 @@ const Products = () => {
                                 </a>
                             </div>
                         ))}
-                        {activeGenre === 1 &&
+                        {/* {activeGenre === 1 &&
                             product.slice(0, 4).map((item, index) => (
                                 <div key={index} className="col-lg-6">
                                     <a href={item.link} className="cards">
@@ -150,7 +150,7 @@ const Products = () => {
                                     </a>
                                 </div>
                             ))
-                        }
+                        } */}
                     </div>
                 </div>
             </div>

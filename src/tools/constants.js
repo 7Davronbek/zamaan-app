@@ -1,4 +1,6 @@
-export const API_PATH = 'https://backend.zamaan.uz/ru/main'
+export const LANGUAGE = 'zamaan-app'
+
+export const API_PATH = `https://backend.zamaan.uz/${localStorage.getItem(LANGUAGE) ? localStorage.getItem(LANGUAGE) : 'ru'}/main`
 
 export const config = {
   headers: {
@@ -7,4 +9,3 @@ export const config = {
   },
 };
 
-export const LANGUAGE = 'zamaan-app'
