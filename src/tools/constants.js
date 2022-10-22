@@ -1,4 +1,4 @@
-export const API_PATH = 'http://backend.zamaan.uz/main'
+export const API_PATH = 'https://backend.zamaan.uz/ru/main'
 
 export const config = {
   headers: {
