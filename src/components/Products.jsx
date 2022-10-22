@@ -4,6 +4,7 @@
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
 import classnames from 'classnames';
 import { useState } from 'react';
+import { getText } from '../locales';
 
 const Products = () => {
     const [activeTab, setActiveTab] = useState('1');
@@ -75,28 +76,28 @@ const Products = () => {
                             <h6
                                 className={classnames({ active: activeTab === '1' })}
                                 onClick={() => { toggle('1'); }}
-                            >Разработка приложения</h6>
+                            >{getText('mobileCreate')}</h6>
 
                             <h6
                                 className={classnames({ active: activeTab === '2' })}
                                 onClick={() => { toggle('2'); }}
-                            >Разработка сайтов </h6>
+                            >{getText('webCreate')} </h6>
                             <h6
                                 className={classnames({ active: activeTab === '3' })}
                                 onClick={() => { toggle('3'); }}
-                            >Комплексный маркетинг</h6>
+                            >{getText('marketing')}</h6>
                             <h6
                                 className={classnames({ active: activeTab === '4' })}
                                 onClick={() => { toggle('4'); }}
-                            >Дизайн</h6>
+                            >{getText('design')}</h6>
                             <h6
                                 className={classnames({ active: activeTab === '5' })}
                                 onClick={() => { toggle('5'); }}
-                            >3D Анимация и моушен</h6>
+                            >{getText('threedAnimation')}</h6>
                             <h6
                                 className={classnames({ active: activeTab === '6' })}
                                 onClick={() => { toggle('6'); }}
-                            >Разработка СRM систем и телеграм ботов</h6>
+                            >{getText('crmandbot')}</h6>
 
                         </div>
                     </div>

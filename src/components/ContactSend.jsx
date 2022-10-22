@@ -79,7 +79,7 @@ const ContactSend = () => {
                                 <div className="contact_service_box_2">
                                     <div onClick={e => pushService('Web')} className={`contact_service_h_2 `}>{getText('webCreate')} </div>
                                     <div onClick={e => pushService('Design')} className={`contact_service_h_2 `}>{getText('design')}</div>
-                                    <div onClick={e => pushService('Motion')} className={`contact_service_h_2 `}>{getText('threedAnimation')}</div>
+                                    <div onClick={e => pushService('Motion')} className={`contact_service_h_2 motion `}>{getText('threedAnimation')}</div>
                                 </div>
                             </div>
                         </div>
