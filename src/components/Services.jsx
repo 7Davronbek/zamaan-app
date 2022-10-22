@@ -87,6 +87,7 @@ const Services = () => {
                                     <li> {getText('marketing5')}</li>
                                     <li> {getText('marketing6')}</li>
                                     <li> {getText('marketing7')}</li>
+                                    <li> {getText('marketing8')}</li>
                                 </ul>
                             </AccordionBody>
                         </AccordionItem>
@@ -99,12 +100,13 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="4">
 
-                                <h6>Создадим для вас:</h6>
+                                <h6>{getText('suggest')}</h6>
                                 <ul>
-                                    <li>Интернет магазин</li>
-                                    <li> Сайт визитка</li>
-                                    <li>Корпоративные сайты</li>
-                                    <li>Сложные системы</li>
+                                    <li>{getText('crmandbot2')}</li>
+                                    <li>{getText('crmandbot3')}</li>
+                                    <li>{getText('crmandbot4')} </li>
+                                    <li>{getText('crmandbot5')}</li>
+                                    <li>{getText('crmandbot6')}</li>
                                 </ul>
                             </AccordionBody>
                         </AccordionItem>
@@ -117,12 +119,12 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="5">
 
-                                <h6>Создадим для вас:</h6>
+                                <h6>{getText('suggest')}</h6>
                                 <ul>
-                                    <li>Интернет магазин</li>
-                                    <li> Сайт визитка</li>
-                                    <li>Корпоративные сайты</li>
-                                    <li>Сложные системы</li>
+                                    <li>{getText('threedAnimation2')}</li>
+                                    <li>{getText('threedAnimation3')}</li>
+                                    <li>{getText('threedAnimation4')} </li>
+                                    <li>{getText('threedAnimation5')}</li>
                                 </ul>
                             </AccordionBody>
                         </AccordionItem>
@@ -135,12 +137,11 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="6">
 
-                                <h6>Создадим для вас:</h6>
+                                <h6>{getText('suggest')}</h6>
                                 <ul>
-                                    <li>Интернет магазин</li>
-                                    <li> Сайт визитка</li>
-                                    <li>Корпоративные сайты</li>
-                                    <li>Сложные системы</li>
+                                    <li>{getText('design2')}</li>
+                                    <li>{getText('design3')}</li>
+                                    <li>{getText('design4')} </li>
                                 </ul>
                             </AccordionBody>
                         </AccordionItem>
