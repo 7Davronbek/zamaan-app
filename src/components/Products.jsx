@@ -109,7 +109,6 @@ const Products = () => {
         getProduct()
         change()
 
-
     }, [activeGenre])
 
     return (
@@ -133,7 +132,9 @@ const Products = () => {
                         {filtered && filtered?.map((item, index) => (
                             <div key={index} className="col-lg-6">
                                 <a href={item.link} className="cards">
-                                    <img className='w-100' src={item.image} alt='zamaan portfolio' />
+                                    {item.project_images && item.project_images.map((item2, index2) => (
+                                        <img key={index2} className='w-100' src={item2.image} alt='zamaan portfolio' />
+                                    ))}
                                     <h5>{item.name}</h5>
                                     <h4>{item.subname}</h4>
                                 </a>
