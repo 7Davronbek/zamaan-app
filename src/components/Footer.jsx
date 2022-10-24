@@ -4,7 +4,7 @@ import { getText } from '../locales'
 const Footer = () => {
     return (
         <>
-            <div className='Footer'>
+            {/* <div className='Footer'>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4">
@@ -26,7 +26,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="FooterLine">
                 <div className="container">
