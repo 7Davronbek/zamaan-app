@@ -4,7 +4,7 @@ import { toast } from 'react-toastify'
 import { getText } from '../locales'
 import { API_PATH, config } from '../tools/constants'
 
-const ContactSend = () => {
+const   ContactSend = () => {
     const [name, setName] = useState('')
     const [names, setNames] = useState([])
     const [company, setCompany] = useState('')

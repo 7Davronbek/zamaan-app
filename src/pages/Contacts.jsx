@@ -14,7 +14,7 @@ const Contacts = () => {
                         <div className="col-lg-6">
                             <div className="contact_soc">
                                 <a target={'_blank'} rel="noreferrer" className='contact_mail' href="https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=zamaangroupuz@gmail.com">zamaangroupuz@gmail.com</a>
-                                <a className='myA' href="">@zamaan_group</a>
+                                <a className='myA mt-4 contact_mail' target={'_blank'} rel="noreferrer" href="https://t.me/zamaan_group/">@zamaan_group</a>
                                 {/* <div className="contact_icon">
                                     <a target={'_blank'} rel="noreferrer" href=""><img src="/img/telegram.svg" alt="" className="contact_icon" /></a>
                                     <a target={'_blank'} rel="noreferrer" href="https://www.instagram.com/zamaangroup/"><img src="/img/insta.svg" alt="" className="contact_icon ms-4" /></a>
