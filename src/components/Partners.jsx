@@ -50,6 +50,8 @@ const Partners = () => {
         <SwiperSlide><img src="/img/company/5.png" alt="zamaan" /></SwiperSlide>
         <SwiperSlide><img src="/img/company/6.png" alt="zamaan" /></SwiperSlide>
         <SwiperSlide><img src="/img/company/7.png" alt="zamaan" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/8.png" alt="zamaan" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/9.png" alt="zamaan" /></SwiperSlide>
         <SwiperSlide><img src="/img/comp1.png" alt="zamaan" /></SwiperSlide>
         <SwiperSlide><img src="/img/comp2.png" alt="zamaan" /></SwiperSlide>
         <SwiperSlide><img src="/img/comp3.png" alt="zamaan" /></SwiperSlide>

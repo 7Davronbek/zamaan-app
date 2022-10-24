@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h1 className='d-flex align-items-center justify-content-center'>@ Copyright 2022.<span className='mx-1'><img src="/img/miniLogo.svg" alt="" /></span> Zamaan.  All rights reserved.</h1>
+                            <h1 className='d-flex align-items-center justify-content-center'>@ Copyright 2022.<span className='mx-1'><img src="/img/footerLogo.svg" alt="" /></span>  All rights reserved.</h1>
                         </div>
                     </div>
                 </div>

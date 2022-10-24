@@ -48,7 +48,7 @@ const Navbar = () => {
                                     <a target={'_blank'} rel="noreferrer" href="https://www.instagram.com/zamaangroup/"><img src="/img/insta.svg" alt="" /></a>
                                     <a target={'_blank'} rel="noreferrer" href="https://www.facebook.com/zamaangroup"><img src="/img/facebook.svg" alt="" /></a>
                                     <a target={'_blank'} rel="noreferrer" href="https://t.me/zamaan_group/"><img src="/img/telegram.svg" alt="" /></a>
-                                    <a target={'_blank'} rel="noreferrer" href="tel: +998 90 823 28 38"><img src="/img/phone.svg" alt="" /></a>
+                                    <a target={'_blank'} rel="noreferrer" href="tel: +998 90 825 28 38"><img src="/img/phone.svg" alt="" /></a>
                                 </div>
                                 <li><Link className={` ${location.pathname === '/' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/">{getText('main')}</Link></li>
                                 <li><Link className={` ${location.pathname === '/services' ? 'active' : ''}`} onClick={() => setBurger(!burger)} to="/services">{getText('services')}</Link></li>
