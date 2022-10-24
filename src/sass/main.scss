@@ -572,12 +572,13 @@ body {
 
                     ul {
                         li {
-                            text-indent: 40px;
+                            // text-indent: 40px;
                             font-weight: 400;
                             color: #fff;
                             font-size: 24px;
                             position: relative;
                             margin-bottom: 20px;
+                            padding-left: 28px !important;
 
                             &::after {
                                 content: '';
@@ -588,6 +589,11 @@ body {
                                 height: 3px;
                                 background: #fff;
                                 border-radius: 50%;
+                                left: 1%;
+                                top: 50%;
+                                width: 4px;
+                                height: 4px;
+                                transform: translateY(-50%);
                             }
                         }
                     }

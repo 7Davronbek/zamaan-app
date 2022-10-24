@@ -83,7 +83,6 @@ const Products = () => {
                 console.log(err);
             })
     }
-
     const getProduct = async () => {
         await axios.get(API_PATH + '/projects')
             .then((res) => {
@@ -122,7 +121,6 @@ const Products = () => {
         getProduct()
         change()
         getMotion()
-
     }, [activeGenre])
 
     return (
@@ -160,7 +158,7 @@ const Products = () => {
                             </div>
                         ))}
                         {/* {activeGenre === 1 &&
-                            product.slice(0, 4).map((item, index) => (
+                            filtered?.slice(0, 1).map((item, index) => ( 
                                 <div key={index} className="col-lg-6">
                                     <a href={item.link} className="cards">
                                         <img className='w-100' src={item.image} alt='zamaan portfolio' />
@@ -170,6 +168,7 @@ const Products = () => {
                                 </div>
                             ))
                         } */}
+
                     </div>
                 </div>
             </div>
