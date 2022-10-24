@@ -72,6 +72,7 @@ const Products = () => {
     const [product, setProduct] = useState([])
     const [activeGenre, setActiveGenre] = useState(1)
     const [filtered, setFiltered] = useState([])
+    const [motion, setMotion] = useState([])
 
     const getName = async () => {
         await axios.get(API_PATH + '/services')
@@ -100,14 +101,27 @@ const Products = () => {
             return;
         }
 
+        if (activeGenre === 9) {
+            setFiltered(motion)
+            return;
+        }
+
         const filtered = product.filter((item) => item.service === activeGenre)
         setFiltered(filtered)
+    }
+
+    const getMotion = async () => {
+        await axios.get(API_PATH + '/project-moshin/')
+            .then((res) => {
+                setMotion(res.data)
+            })
     }
 
     useEffect(() => {
         getName()
         getProduct()
         change()
+        getMotion()
 
     }, [activeGenre])
 
@@ -130,11 +144,16 @@ const Products = () => {
                             </div>
                         </div>
                         {filtered && filtered?.map((item, index) => (
-                            <div key={index} className="col-lg-6">
+                            <div key={index} className={`${item.video ? 'col-lg-12' : 'col-lg-6'}`}>
                                 <a href={item.link} className="cards">
                                     {item.project_images && item.project_images.map((item2, index2) => (
                                         <img key={index2} className='w-100' src={item2.image} alt='zamaan portfolio' />
                                     ))}
+                                    {item.video &&
+                                        <video muted loop autoPlay>
+                                            <source src={item.video} type="video/mp4" />
+                                        </video>
+                                    }
                                     <h5>{item.name}</h5>
                                     <h4>{item.subname}</h4>
                                 </a>

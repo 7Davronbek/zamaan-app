@@ -1,17 +1,28 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
 import { getText } from '../locales'
 import { API_PATH, config } from '../tools/constants'
 
 const ContactSend = () => {
     const [name, setName] = useState('')
+    const [names, setNames] = useState([])
     const [company, setCompany] = useState('')
     const [phone, setPhone] = useState('')
     // const [email, setEmail] = useState('')
     const [service, setService] = useState('')
     const [message, setMessage] = useState('')
     const [files, setFiles] = useState('')
+
+    const getName = async () => {
+        await axios.get(API_PATH + '/services')
+            .then((res) => {
+                setNames(res.data)
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    }
 
     const pushService = e => {
         setService(old => [...old, e])
@@ -58,6 +69,10 @@ const ContactSend = () => {
             })
     }
 
+    useEffect(() => {
+        getName()
+    }, [])
+
     return (
         <>
             <form onSubmit={handleClick}>
@@ -87,14 +102,13 @@ const ContactSend = () => {
                             </div>
                             <div className="col-lg-7">
                                 <div className="contact_service_box_1">
-                                    <div onClick={e => pushService('Mobile')} className={`contact_service_h `}>{getText('mobileCreate')} </div>
-                                    <div onClick={e => pushService('Internet')} className={`contact_service_h `}> {getText('marketing')}</div>
+                                    <div onClick={e => pushService('Mobile')} className={`contact_service_h  mb-5 `}>{getText('mobileCreate')} </div>
+                                    <div onClick={e => pushService('Internet')} className={`contact_service_h  mb-5 `}> {getText('marketing')}</div>
+                                    <div onClick={e => pushService('Web')} className={`contact_service_h  mb-5 `}>{getText('webCreate')} </div>
+                                    <div onClick={e => pushService('Design')} className={`contact_service_h  mb-5 `}>{getText('design')}</div>
+                                    <div onClick={e => pushService('Motion')} className={`contact_service_h mb-5 w-100 motion `}>{getText('threedAnimation')}</div>
                                 </div>
-                                <div className="contact_service_box_2">
-                                    <div onClick={e => pushService('Web')} className={`contact_service_h_2 `}>{getText('webCreate')} </div>
-                                    <div onClick={e => pushService('Design')} className={`contact_service_h_2 `}>{getText('design')}</div>
-                                    <div onClick={e => pushService('Motion')} className={`contact_service_h_2 motion `}>{getText('threedAnimation')}</div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
