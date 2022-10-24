@@ -16,9 +16,9 @@ const Partners = () => {
         <img className='w-100' src="img/partners.png" alt="" />
       </div>
       <h2>
-      {getText('beliveUs')}
+        {getText('beliveUs')}
       </h2>
-            <Swiper
+      <Swiper
         slidesPerView={1}
         spaceBetween={0}
         loop={true}
@@ -43,17 +43,13 @@ const Partners = () => {
         modules={[Autoplay]}
         className="mySwiper text-center"
       >
-        <SwiperSlide><img src="img/comp1.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp2.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp3.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp4.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp5.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp6.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp7.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp8.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp9.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp10.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="img/comp11.png" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/1.png" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/2.png" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/3.png" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/4.png" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/5.png" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/6.png" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/img/company/7.png" alt="" /></SwiperSlide>
       </Swiper>
     </div>
   )
