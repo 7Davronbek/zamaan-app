@@ -557,6 +557,12 @@ body {
                             line-height: 29px;
                             padding: 28px 30px;
                         }
+
+                        @media(max-width: 450px) {
+                            font-size: 17px !important;
+                            line-height: 28px !important;
+                            padding: 28px 30px;
+                        }
                     }
                 }
 
@@ -594,8 +600,13 @@ body {
                                 width: 4px;
                                 height: 4px;
                                 transform: translateY(-50%);
+                                top: 19px;
                             }
                         }
+                    }
+
+                    @media(max-width: 767px) {
+                        padding: 28px 0 60px 10px;
                     }
                 }
             }
@@ -676,13 +687,14 @@ body {
         }
 
         .contact_h {
-            font-family: 'Jost';
+            // font-family: 'Jost';
             font-style: normal;
             font-weight: 500;
             font-size: 64px;
             line-height: 92px;
             text-transform: uppercase;
             color: #FFFFFF;
+            width: 90%;
 
             @media(max-width:1300px) {
                 font-size: 60px;
@@ -740,7 +752,7 @@ body {
             }
 
             .contact_mail {
-                font-family: 'Jost';
+                // font-family: 'Jost';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 40px;
@@ -778,7 +790,7 @@ body {
             border-bottom: 1px solid #F5F5F5;
 
             .contact_send_h {
-                font-family: 'Jost';
+                // font-family: 'Jost';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 52px;
@@ -821,7 +833,7 @@ body {
                 border-radius: 90px;
                 width: 100%;
                 height: 120px;
-                font-family: 'Jost';
+                // font-family: 'Jost';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 36px;
@@ -857,7 +869,7 @@ body {
 
                 .contact_send_p {
                     margin-left: 25px;
-                    font-family: 'Jost';
+                    // font-family: 'Jost';
                     font-style: normal;
                     font-weight: 500;
                     font-size: 42px;
@@ -900,7 +912,7 @@ body {
                 background: #FFFFFF;
                 box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.55);
                 border-radius: 90px;
-                font-family: 'Jost';
+                // font-family: 'Jost';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 36px;
@@ -947,7 +959,7 @@ body {
         padding: 70px 0;
 
         .contact_service_h {
-            font-family: 'Jost';
+            // font-family: 'Jost';
             font-style: normal;
             font-weight: 500;
             font-size: 52px;
@@ -963,7 +975,7 @@ body {
         .contact_service_box_1 {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex-wrap: wrap;
 
             @media(max-width:992px) {
@@ -977,16 +989,18 @@ body {
                 line-height: 35px;
                 color: #FFFFFF;
                 transition: 0.3s ease-in-out;
-                padding: 0 50px;
+                padding: 0 35px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 border: 1px solid white;
                 height: 75px;
-                font-family: 'Jost';
+                // font-family: 'Jost';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 24px;
+                font-size: 23px;
+                margin-right: 4px;
+                margin-bottom: 23px !important;
 
                 &:hover {
                     background: linear-gradient(180deg, #4A3AFF 0%, #A500DF 100%);
@@ -1061,7 +1075,7 @@ body {
                 justify-content: center;
                 border: 1px solid white;
                 height: 75px;
-                font-family: 'Jost';
+                // font-family: 'Jost';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 27px;
@@ -1297,6 +1311,11 @@ body {
             align-items: center;
             justify-content: center;
             gap: 30px;
+
+            @media(max-width: 992px) {
+                justify-content: left;
+                gap: 11px 29px;
+            }
         }
 
         .btnWrap {
@@ -1448,6 +1467,19 @@ body {
     &.uzActive {
         font-family: 'Ritola', sans-serif;
 
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        .contact_send_h {
+            font-family: 'Ritola'sans-serif !important;
+        }
+
         .navBar {
 
             .mobileWrap {
@@ -1462,15 +1494,20 @@ body {
         .Header {
 
             h1 {
-                font-size: 28px;
-                line-height: 40px;
                 width: 80% !important;
                 margin-left: auto;
+                font-weight: 500;
+                font-size: 55px;
 
                 @media(max-width: 1400px) {
                     width: 100%;
                     margin-left: auto;
                     margin-right: auto;
+                }
+
+                @media(max-width: 992px) {
+                    font-size: 28px;
+                    line-height: 40px;
                 }
             }
 
@@ -1479,6 +1516,14 @@ body {
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 20px;
+
+                @media(max-width: 767px) {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin-top: 90px !important;
+                    width: 100%;
+                }
             }
         }
 
@@ -1504,6 +1549,26 @@ body {
                     font-weight: 400;
                     font-size: 28px !important;
                     line-height: 40px !important;
+
+                    @media(max-width: 767px) {
+                        font-weight: 400;
+                        font-size: 16px !important;
+                        line-height: 24px !important;
+                    }
+                }
+            }
+
+            .accordion-body {
+
+                li {
+                    font-size: 22px !important;
+                    line-height: 44px;
+
+                    @media(max-width: 767px) {
+                        font-weight: 400;
+                        font-size: 16px !important;
+                        line-height: 24px;
+                    }
                 }
             }
         }
@@ -1513,6 +1578,10 @@ body {
             h6 {
                 font-size: 20px;
                 line-height: 20px;
+
+                @media(max-width:450px) {
+                    font-size: 16px;
+                }
             }
 
             h5 {
@@ -1540,6 +1609,35 @@ body {
                 font-weight: 400;
                 font-size: 70px;
                 line-height: 106px;
+            }
+        }
+
+        .Contact {
+
+            .contact_h {
+                width: 80%;
+
+                @media(max-width: 992px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .ContactSend {
+
+            .contact_send_h {
+                font-size: 36px !important;
+                line-height: 62px;
+            }
+        }
+
+        .ContactService {
+
+            .col-lg-5 {
+
+                .contact_service_h {
+                    font-size: 36px;
+                }
             }
         }
 
