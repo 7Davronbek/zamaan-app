@@ -1462,13 +1462,15 @@ body {
         .Header {
 
             h1 {
-                font-size: 50px;
-                line-height: 73px;
-                width: 70%;
+                font-size: 28px;
+                line-height: 40px;
+                width: 80% !important;
                 margin-left: auto;
 
                 @media(max-width: 1400px) {
                     width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
 

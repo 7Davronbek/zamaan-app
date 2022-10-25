@@ -41,7 +41,7 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="1">
 
-                                <h6>{getText('suggest')}</h6>
+                                {/* <h6>{getText('suggest')}</h6> */}
                                 <ul>
                                     <li>{getText('mobileCreate2')}</li>
                                     <li>{getText('mobileCreate3')}</li>
@@ -59,7 +59,7 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="2">
 
-                                <h6>{getText('suggest')}</h6>
+                                {/* <h6>{getText('suggest')}</h6> */}
                                 <ul>
                                     <li>{getText('webCreate2')}</li>
                                     <li>{getText('webCreate3')}</li>
@@ -79,7 +79,7 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="3">
 
-                                <h6>{getText('suggest')}</h6>
+                                {/* <h6>{getText('suggest')}</h6> */}
                                 <ul>
                                     <li> {getText('marketing2')}</li>
                                     <li> {getText('marketing3')}</li>
@@ -100,7 +100,7 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="4">
 
-                                <h6>{getText('suggest')}</h6>
+                                {/* <h6>{getText('suggest')}</h6> */}
                                 <ul>
                                     <li>{getText('crmandbot2')}</li>
                                     <li>{getText('crmandbot3')}</li>
@@ -119,7 +119,7 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="5">
 
-                                <h6>{getText('suggest')}</h6>
+                                {/* <h6>{getText('suggest')}</h6> */}
                                 <ul>
                                     <li>{getText('threedAnimation2')}</li>
                                     <li>{getText('threedAnimation3')}</li>
@@ -137,7 +137,7 @@ const Services = () => {
                             </AccordionHeader>
                             <AccordionBody accordionId="6">
 
-                                <h6>{getText('suggest')}</h6>
+                                {/* <h6>{getText('suggest')}</h6> */}
                                 <ul>
                                     <li>{getText('design2')}</li>
                                     <li>{getText('design3')}</li>
