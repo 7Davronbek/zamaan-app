@@ -234,6 +234,8 @@ body {
             .burger2 {
                 top: 9px;
                 transition: all .3s ease-in-out;
+                width: 20px;
+                right: 5px;
             }
 
             .burger3 {
@@ -702,27 +704,13 @@ body {
             }
 
             @media(max-width:992px) {
-                text-align: center;
+                text-align: left;
+                font-weight: 400;
+                font-size: 32px !important;
+                line-height: 40px;
             }
 
-            @media(max-width:576px) {
-                font-size: 55px;
-            }
 
-            @media(max-width:500px) {
-                font-size: 45px;
-                line-height: 60px;
-            }
-
-            @media(max-width:420px) {
-                font-size: 40px;
-                line-height: 60px;
-            }
-
-            @media(max-width:380px) {
-                font-size: 34px;
-                line-height: 50px;
-            }
         }
 
         .contact_soc {
@@ -801,26 +789,46 @@ body {
                     text-align: center;
                     line-height: 65px;
                     margin-bottom: 50px;
+                    font-weight: 400;
+                    font-size: 22px !important;
+                    line-height: 22px;
+                    text-align: left;
                 }
 
                 @media(max-width:576px) {
                     font-size: 45px;
                     line-height: 55px;
+                    font-weight: 400;
+                    font-size: 22px !important;
+                    line-height: 22px;
+                    text-align: left;
                 }
 
                 @media(max-width:430px) {
                     font-size: 40px;
                     line-height: 50px;
+                    font-weight: 400;
+                    font-size: 22px !important;
+                    line-height: 22px;
+                    text-align: left;
                 }
 
                 @media(max-width:380px) {
                     font-size: 35px;
                     line-height: 45px;
+                    font-weight: 400;
+                    font-size: 22px !important;
+                    line-height: 22px;
+                    text-align: left;
                 }
 
                 @media(max-width:330px) {
                     font-size: 30px;
                     line-height: 40px;
+                    font-weight: 400;
+                    font-size: 22px !important;
+                    line-height: 22px;
+                    text-align: left;
                 }
 
 
@@ -945,6 +953,15 @@ body {
                     color: white;
                 }
             }
+
+            input {
+
+                @media(max-width: 767px) {
+                    font-weight: 400;
+                    font-size: 18px !important;
+                    line-height: 36px;
+                }
+            }
         }
 
         &.second {
@@ -968,7 +985,8 @@ body {
             color: #FFFFFF;
 
             @media(max-width:992px) {
-                text-align: center;
+                font-size: 32px;
+                text-align: left;
             }
         }
 
@@ -1628,6 +1646,12 @@ body {
             .contact_send_h {
                 font-size: 36px !important;
                 line-height: 62px;
+
+                @media(max-width: 767px) {
+                    font-weight: 400;
+                    font-size: 22px !important;
+                    line-height: 22px;
+                }
             }
         }
 
@@ -1637,6 +1661,30 @@ body {
 
                 .contact_service_h {
                     font-size: 36px;
+
+                    @media(max-width: 767px) {
+                        font-weight: 400;
+                        font-size: 22px !important;
+                        line-height: 22px;
+                        text-align: left;
+                        margin-bottom: 15px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+
+        .ContactService {
+
+            .contact_send_h {
+
+                @media(max-width: 767px) {
+                    font-weight: 400;
+                    font-size: 22px !important;
+                    line-height: 28px;
+                    text-align: left;
+                    margin-bottom: 15px;
+                    line-height: 32px;
                 }
             }
         }
