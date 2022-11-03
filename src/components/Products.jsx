@@ -95,10 +95,11 @@ const Products = () => {
                         </div>
                         {filtered && filtered.map((item, index) => (
                             <div key={index} className={`${item.video ? 'col-lg-12' : 'col-lg-6'}`}>
-                                <a href={item.link} className="cards">
+                                <a href={item.link} className={`cards ${item.video ? 'videoCard' : ''}`}>
                                     {item.project_images && item.project_images.map((item2, index2) => (
 
                                         <Swiper
+                                            key={index2}
                                             slidesPerView={1}
                                             spaceBetween={40}
                                             loop={false}

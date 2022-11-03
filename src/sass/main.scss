@@ -1152,6 +1152,10 @@ body {
     .Products {
         padding: 0 0 30px;
 
+        .videoCard {
+            height: auto !important;
+        }
+
         .swiper {
             height: 100% !important;
         }
