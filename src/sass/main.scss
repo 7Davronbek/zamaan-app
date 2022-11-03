@@ -1152,6 +1152,22 @@ body {
     .Products {
         padding: 0 0 30px;
 
+        .swiper {
+            height: 100% !important;
+        }
+
+        .swiper-pagination-bullet {
+            background: $gradient;
+            width: 15px;
+            height: 8px;
+            border-radius: 6px;
+            transition: all .4s ease-in-out;
+
+            &.swiper-pagination-bullet-active {
+                width: 30px ;
+            }
+        }
+
         .tab-pane {
             transform: translateY(50px);
             opacity: 0;
@@ -1201,6 +1217,10 @@ body {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+
+                @media(max-width: 767px) {
+                    object-fit: contain;
+                }
             }
 
             h5,
@@ -1208,6 +1228,7 @@ body {
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                z-index: 1;
             }
 
             img {
